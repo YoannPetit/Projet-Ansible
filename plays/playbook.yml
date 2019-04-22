@@ -10,5 +10,4 @@
   roles:
     - apache
     - wordpress-web
-    - ftp
 
