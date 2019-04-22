@@ -1,0 +1,14 @@
+---
+- hosts: BDD
+  remote_user: vagrant
+  roles:
+    - mysql
+    - wordpress-db
+
+- hosts: WEB
+  remote_user: vagrant
+  roles:
+    - apache
+    - wordpress-web
+    - ftp
+

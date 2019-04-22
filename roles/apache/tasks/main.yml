@@ -1,0 +1,10 @@
+---
+- name: upgrade all packages
+  yum:
+    name: '*'
+    state: latest
+- name: installation apache
+  yum:
+    name: httpd
+    state: latest
+

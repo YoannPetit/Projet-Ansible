@@ -1,0 +1,12 @@
+---
+- hosts: BDD
+  remote_user: vagrant
+  tasks:
+  - name: upgrade all packages
+    yum:
+      name: '*'
+      state: latest
+  - name: installation mariadb
+    yum:
+      name: mysql-server,MySQL-python
+      state: latest
