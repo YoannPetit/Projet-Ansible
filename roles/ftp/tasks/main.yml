@@ -1,6 +1,12 @@
 ---
-- name: installation apache
+- name: installation FTP
   yum:
-    name: httpd
+    name: vsftpd
     state: latest
+
+- name: Make sure a service is running
+  systemd:
+    state: started
+    enabled: yes
+    name: vsftpd
 

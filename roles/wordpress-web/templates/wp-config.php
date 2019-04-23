@@ -15,11 +15,11 @@
  */
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wp_db');
+define('DB_NAME', '{{ wp_db_nom }}');
 /** MySQL database username */
-define('DB_USER', 'wp_user');
+define('DB_USER', '{{ wp_db_user }}');
 /** MySQL database password */
-define('DB_PASSWORD', 'wp_password');
+define('DB_PASSWORD', '{{ wp_db_password }}');
 /** MySQL hostname */
 define('DB_HOST', '{{ wp_db_host }}');
 /** Database Charset to use in creating database tables. */
