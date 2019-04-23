@@ -1,8 +1,8 @@
 ---
 - name: Create WordPress database
-  mysql_db: name='wp_db' state=present
+  mysql_db: name=wp_db state=present
 
 - name: Create WordPress database user
-  mysql_user: name='wp_user' password='wp_password' priv='wp_db'.*:ALL host='localhost' state=present
+  mysql_user: name=wp_user password=wp_password priv=wp_db.*:ALL host='%' state=present
 
 

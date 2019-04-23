@@ -4,6 +4,13 @@
     name: mariadb-server,mariadb,MySQL-python
     state: latest
 
+- name: Install libselinux-python
+  yum: name=libselinux-python state=present
+
+- name: On desactive SElinux
+  selinux:
+    state: disabled
+
 - name: Make sure a service is running
   systemd:
     state: started
